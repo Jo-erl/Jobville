@@ -1,0 +1,450 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE-EDGE" />
+    <meta
+      name="viewport"
+      content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no shrink-to-fit=no"
+    />
+    <meta name="description" content="" />
+    <meta name="keywords" content="html, css, javascript" />
+    <meta name="author" content="Joel Anang" />
+    <title>Jobville</title>
+    <link rel="stylesheet" href="style.css" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Poppins:wght@200;300;400;600;700&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      rel="stylesheet"
+      href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css"
+    />
+    <link rel="icon" href="images/favicon.png" type="image/x-icon" />
+  </head>
+  <body>
+    <nav class="navbar">
+      <div class="navbar-left">
+        <a href="index.html" class="logo"><img src="images/logo.png" /></a>
+        <a href="index.html" class="logo2"><img src="images/logo2.png" /></a>
+        <div class="search-box">
+          <img src="images/search.png" />
+          <input type="text" placeholder="Search" />
+        </div>
+      </div>
+      <div class="navbar-center">
+        <ul>
+          <li>
+            <a href="#" class="active-link"
+              ><img src="images/home.png" /><span>Home</span></a
+            >
+          </li>
+          <li>
+            <a href="#"
+              ><img src="images/network.png" /><span>My Network</span></a
+            >
+          </li>
+          <li>
+            <a href="#"><img src="images/jobs.png" /><span>Jobs</span></a>
+          </li>
+          <li>
+            <a href="#"
+              ><img src="images/message.png" /><span>Messaging</span></a
+            >
+          </li>
+          <li>
+            <a href="#""><img src="images/notification.png" /><span
+              >Notifications</span
+            ></a>
+          </li>
+        </ul>
+      </div>
+      <div class="navbar-right">
+        <div class="online">
+          <img src="images/user-1.png" class="nav-profile-img" onclick="toggleMenu()"/>
+        </div>
+      </div>
+
+      <!-----Profile Dropdown-->
+      <div class="profile-menu-wrap" id="profileMenu">
+        <div class="profile-menu">
+            <div class="user-info">
+                <img src="images/user-1.png">
+                <div>
+                    <h3>Jake Anchor</h3>
+                    <a href="profile.html">See your profile</a>
+                </div>
+            </div>
+            <hr>
+            <a href="#" class="profile-menu-link">
+                <img src="images/feedback.png" >
+                <p>Give Feedback</p>
+                <span>></span>
+            </a>
+            <a href="#" class="profile-menu-link">
+                <img src="images/setting.png" >
+                <p>Settings & Privacy</p>
+                <span>></span>
+            </a>
+            <a href="#" class="profile-menu-link">
+                <img src="images/help.png" >
+                <p>Help & Support</p>
+                <span>></span>
+            </a>
+            <a href="#" class="profile-menu-link">
+                <img src="images/display.png" >
+                <p>Display & Accessibility</p>
+                <span>></span>
+            </a>
+            <a href="#" class="profile-menu-link">
+                <img src="images/logout.png" >
+                <p>Logout</p>
+                <span>></span>
+            </a>
+
+        </div>
+      </div>
+
+
+
+    </nav>
+
+    <!---Nav close-->
+    <div class="container">
+      <!---left-sidebar-->
+      <div class="left-sidebar">
+        <div class="sidebar-profile-box">
+          <img src="images/cover-pic.jpg" width="100%" />
+          <div class="sidebar-profile-info">
+            <img src="images/user-1.png" />
+            <h1>Jake Anchor</h1>
+            <h3>Graphic Designer at Microsoft</h3>
+            <ul>
+              <li>Your profile views <span>60</span></li>
+              <li>Your post views <span>145</span></li>
+              <li>Your connections <span>370</span></li>
+            </ul>
+          </div>
+          <div class="sidebar-profile-link">
+            <a href="#"><img src="images/items.png" />My items</a>
+            <a href="#"><img src="images/premium.png" />Try Premium</a>
+          </div>
+        </div>
+
+        <div class="sidebar-activity" id="sidebarActivity">
+          <h3>RECENT</h3>
+          <a href="#"class="hover"><img src="images/recent.png" />Web Development</a>
+          <a href="#"class="hover"><img src="images/recent.png" />User Interface</a>
+          <a href="#"class="hover"><img src="images/recent.png" />Online Learning</a>
+          <a href="#"class="hover"><img src="images/recent.png" />Learn Online</a>
+          <a href="#"class="hover"><img src="images/recent.png" />Code Better</a>
+          <a href="#"class="hover"><img src="images/recent.png" />Group Learning</a>
+          <h3>GROUPS</h3>
+          <a href="#"class="hover"><img src="images/group.png" />Web Design Group</a>
+          <a href="#"class="hover"><img src="images/group.png" />HTML & CSS Learners</a>
+          <a href="#"
+            class="hover"><img src="images/group.png" />Python & JavaScript Group</a
+          >
+          <a href="#"class="hover"><img src="images/group.png" />Learn Coding Online</a>
+          <h3>HASHTAG</h3>
+          <a href="#"class="hover"><img src="images/hashtag.png" />webdev</a>
+          <a href="#"class="hover"><img src="images/hashtag.png" />uiux</a>
+          <a href="#"class="hover"><img src="images/hashtag.png" />onlinelearning</a>
+          <div class="discover-more-link">
+            <a href="#">Discover more</a>
+          </div>
+        </div>
+        <p class="showMoreLink" id="open-activity" onclick="toggleActivity()">Show more <b>+</b></p>
+        <div id="sidebarActivity" class="activity">Show more <b>-</b></div>
+              </div>
+
+      <!---main-content-->
+      <div class="main-content">
+        <div class="create-post">
+            <div class="create-post-input">
+                <img src="images/user-1.png">
+                <textarea rows="2" placeholder="Share your thoughts"></textarea>
+            </div>
+            <div class="create-post-links">
+                <li><img src="images/photo.png">Photo</li>
+                <li><img src="images/video.png">Video</li>
+                <li><img src="images/event.png">Event</li>
+                <li>Post</li>
+            </div>
+        </div>
+        <div class="sort-by">
+            <hr>
+            <p>Sort by: <span>top <img src="images/down-arrow.png"></span></p>
+        </div>
+        <!------------------------1111111111------------------------------------------>
+        <div class="post">
+            <div class="post-author">
+                <img src="images/user-3.png">
+                <div>
+                    <h1>Amy Spencer</h1>
+                    <small>Founder and CEO at Spence Industries</small>
+                    <small>20 mins ago</small>
+                </div>
+            </div>
+            <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Accusamus, ut cum veritatis ratione iste provident, est omnis voluptates atque tempore temporibus! Aperiam sed laudantium magnam. Ducimus accusamus neque unde et!</p>
+            <img src="images/post-image-1.png" width="100%">
+
+            <div class="post-stats">
+                <div>
+                    <img src="images/thumbsup.png">
+                    <img src="images/love.png">
+                    <img src="images/clap.png">
+                    <span class="liked-users">Maria Reyes and 127 others</span>
+                </div>
+            <div>
+            <span>22 comments &middot; 40 shares</span>
+        </div>
+            </div>
+            <div class="post-activity">
+                <div>
+                    <img src="images/user-1.png" class="post-activity-user-icon">
+                    <img src="images/down-arrow.png" class="post-activity-arrow-icon">
+                </div>
+            <div class="post-activity-link">
+                <img src="images/like.png">
+                <span>Like</span>
+            </div>
+            <div class="post-activity-link">
+                <img src="images/comment.png">
+                <span>Commment</span>
+            </div>
+            <div class="post-activity-link">
+                <img src="images/share.png">
+                <span>Share</span>
+            </div>
+            <div class="post-activity-link">
+                <img src="images/send.png">
+                <span>Send</span>
+            </div>
+        </div>
+      </div>
+      <!-----------------------22222222222------------------------------------------->
+      <div class="post">
+        <div class="post-author">
+            <img src="images/user-5.png">
+            <div>
+                <h1>Mark Washington</h1>
+                <small>Founder and CEO Washington Heights</small>
+                <small>42 mins ago</small>
+            </div>
+        </div>
+        <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Accusamus, ut cum veritatis ratione iste provident, est omnis voluptates atque tempore temporibus! Aperiam sed laudantium magnam. Ducimus accusamus neque unde et!</p>
+        <img src="images/post-image-1.2.png" width="100%">
+
+        <div class="post-stats">
+            <div>
+                <img src="images/thumbsup.png">
+                <img src="images/love.png">
+                <img src="images/clap.png">
+                <span class="liked-users">Maria Reyes and 127 others</span>
+            </div>
+        <div>
+        <span>22 comments &middot; 40 shares</span>
+    </div>
+        </div>
+        <div class="post-activity">
+            <div>
+                <img src="images/user-1.png" class="post-activity-user-icon">
+                <img src="images/down-arrow.png" class="post-activity-arrow-icon">
+            </div>
+        <div class="post-activity-link">
+            <img src="images/like.png">
+            <span>Like</span>
+        </div>
+        <div class="post-activity-link">
+            <img src="images/comment.png">
+            <span>Commment</span>
+        </div>
+        <div class="post-activity-link">
+            <img src="images/share.png">
+            <span>Share</span>
+        </div>
+        <div class="post-activity-link">
+            <img src="images/send.png">
+            <span>Send</span>
+        </div>
+    </div>
+  </div>
+  <!------------------------33333333333------------------------------------------>
+  <div class="post">
+    <div class="post-author">
+        <img src="images/user-6.png">
+        <div>
+            <h1>Richard Azure</h1>
+            <small>Software Engineer at Ruby Tech</small>
+            <small>50 mins ago</small>
+        </div>
+    </div>
+    <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Accusamus, ut cum veritatis ratione iste provident, est omnis voluptates atque tempore temporibus! Aperiam sed laudantium magnam. Ducimus accusamus neque unde et!</p>
+    <img src="images/post-image-3.png" width="100%">
+
+    <div class="post-stats">
+        <div>
+            <img src="images/thumbsup.png">
+            <img src="images/love.png">
+            <img src="images/clap.png">
+            <span class="liked-users">Maria Reyes and 127 others</span>
+        </div>
+    <div>
+    <span>22 comments &middot; 40 shares</span>
+</div>
+    </div>
+    <div class="post-activity">
+        <div>
+            <img src="images/user-1.png" class="post-activity-user-icon">
+            <img src="images/down-arrow.png" class="post-activity-arrow-icon">
+        </div>
+    <div class="post-activity-link">
+        <img src="images/like.png">
+        <span>Like</span>
+    </div>
+    <div class="post-activity-link">
+        <img src="images/comment.png">
+        <span>Commment</span>
+    </div>
+    <div class="post-activity-link">
+        <img src="images/share.png">
+        <span>Share</span>
+    </div>
+    <div class="post-activity-link">
+        <img src="images/send.png">
+        <span>Send</span>
+    </div>
+</div>
+</div>
+<!----------------------------444444444-------------------------------------->
+<div class="post">
+    <div class="post-author">
+        <img src="images/user-4.png">
+        <div>
+            <h1>Sammie Fischer</h1>
+            <small>Student at Evergreen University</small>
+            <small>40 mins ago</small>
+        </div>
+    </div>
+    <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Accusamus, ut cum veritatis ratione iste provident, est omnis voluptates atque tempore temporibus! Aperiam sed laudantium magnam. Ducimus accusamus neque unde et!</p>
+    <img src="images/post-image-4.png" width="100%">
+
+    <div class="post-stats">
+        <div>
+            <img src="images/thumbsup.png">
+            <img src="images/love.png">
+            <img src="images/clap.png">
+            <span class="liked-users">Maria Reyes and 127 others</span>
+        </div>
+    <div>
+    <span>22 comments &middot; 40 shares</span>
+</div>
+    </div>
+    <div class="post-activity">
+        <div>
+            <img src="images/user-1.png" class="post-activity-user-icon">
+            <img src="images/down-arrow.png" class="post-activity-arrow-icon">
+        </div>
+    <div class="post-activity-link">
+        <img src="images/like.png">
+        <span>Like</span>
+    </div>
+    <div class="post-activity-link">
+        <img src="images/comment.png">
+        <span>Commment</span>
+    </div>
+    <div class="post-activity-link">
+        <img src="images/share.png">
+        <span>Share</span>
+    </div>
+    <div class="post-activity-link">
+        <img src="images/send.png">
+        <span>Send</span>
+    </div>
+</div>
+</div>
+<!--------------------------------------------------------------------------->
+
+      </div>
+
+
+
+      <!---right-sidebar-->
+      <div class="right-sidebar">
+        <div class="sidebar-news">
+          <img src="images/more.png" class="info-icon" />
+          <h1 class="news-h1">Trending News</h1>
+          <a href="#" class="hover">High demand for skilled manpower</a>
+          <span>4m ago &middot; 10,934 readers</span>
+
+          <a href="#" class="hover">Rapid career upscale</a>
+          <span>16m ago &middot; 1,934 readers</span>
+
+          <a href="#" class="hover">Immigrants wanted in Canada for work</a>
+          <span>2h ago &middot; 20,235 readers</span>
+
+          <a href="#" class="hover">Big tech companies on a hiring spree</a>
+          <span>12h ago &middot; 10,934 readers</span>
+
+          <a href="#" class="hover">Ben Audemors - world's largest investor</a>
+          <span>12h ago &middot; 10,934 readers</span>
+
+          <a href="#" class="read-more-link">Read More</a>
+        </div>
+
+        <div class="sidebar-ad">
+          <small>Ad &middot; &middot; &middot;</small>
+          <p>Learn the fundamentals of Branding</p>
+          <div>
+            <img src="images/brand1.png" />
+            <img src="images/brand2.png" />
+          </div>
+          <b>Hot brands in demand</b>
+          <a href="#" class="ad-link">Learn More</a>
+        </div>
+
+        
+        <div class="sidebar-useful-links">
+            <a href="">About</a>
+            <a href="">Accessibility</a>
+            <a href="">Help Center</a>
+            <a href="">Privacy Policy</a>
+            <a href="">Get the App</a>
+            <a href="">More</a>
+
+            <div class="copyright-msg">
+                <img src="images/logo2.png">
+                <p>Jobville &#169; 2025. All rights reserved</p>
+            </div>
+        </div>
+      </div>
+    </div>
+
+    <script>
+        let profileMenu = document.getElementById("profileMenu");
+
+        function toggleMenu(){
+            profileMenu.classList.toggle("open-menu");
+        }
+    </script>
+
+<script>
+  let sideActivity = document.getElementById("sidebarActivity");
+  let moreLink = document.getElementById("open-activity");
+
+  function toggleActivity() {
+    sideActivity.classList.toggle("open-activity");
+
+    if (sideActivity.classList.contains("open-activity")) {
+      moreLink.innerHTML = "Show less <b>-</b>";
+    } else {
+      moreLink.innerHTML = "Show more <b>+</b>";
+    }
+  }
+</script>
+
+
+  </body>
+</html>

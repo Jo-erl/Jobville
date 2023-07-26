@@ -1,0 +1,307 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE-EDGE" />
+    <meta
+      name="viewport"
+      content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no shrink-to-fit=no"
+    />
+    <meta name="description" content="" />
+    <meta name="keywords" content="html, css, javascript" />
+    <meta name="author" content="Joel Anang" />
+    <title>Profile</title>
+    <link rel="stylesheet" href="style.css" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Poppins:wght@200;300;400;600;700&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      rel="stylesheet"
+      href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css"
+    />
+    <link rel="icon" href="images/favicon.png" type="image/x-icon" />
+  </head>
+  <body>
+
+    <nav class="navbar">
+      <div class="navbar-left">
+        <a href="index.html" class="logo"><img src="images/logo.png" /></a>
+        <a href="index.html" class="logo2"><img src="images/logo2.png" /></a>
+        <div class="search-box">
+          <img src="images/search.png" />
+          <input type="text" placeholder="Search" />
+        </div>
+      </div>
+      <div class="navbar-center">
+        <ul>
+          <li>
+            <a href="#""
+              ><img src="images/home.png" /><span>Home</span></a
+            >
+          </li>
+          <li>
+            <a href="#"
+              ><img src="images/network.png" /><span>My Network</span></a
+            >
+          </li>
+          <li>
+            <a href="#"><img src="images/jobs.png" /><span>Jobs</span></a>
+          </li>
+          <li>
+            <a href="#"
+              ><img src="images/message.png" /><span>Messaging</span></a
+            >
+          </li>
+          <li>
+            <a href="#""><img src="images/notification.png" /><span
+              >Notifications</span
+            ></a>
+          </li>
+        </ul>
+      </div>
+      <div class="navbar-right">
+        <div class="online">
+          <img src="images/user-1.png" class="nav-profile-img" onclick="toggleMenu()"/>
+        </div>
+      </div>
+
+      <!-----Profile Dropdown-->
+      <div class="profile-menu-wrap" id="profileMenu">
+        <div class="profile-menu">
+            <div class="user-info">
+                <img src="images/user-1.png">
+                <div>
+                    <h3>Jake Anchor</h3>
+                    <a href="profile.html">See your profile</a>
+                </div>
+            </div>
+            <hr>
+            <a href="#" class="profile-menu-link">
+                <img src="images/feedback.png" >
+                <p>Give Feedback</p>
+                <span>></span>
+            </a>
+            <a href="#" class="profile-menu-link">
+                <img src="images/setting.png" >
+                <p>Settings & Privacy</p>
+                <span>></span>
+            </a>
+            <a href="#" class="profile-menu-link">
+                <img src="images/help.png" >
+                <p>Help & Support</p>
+                <span>></span>
+            </a>
+            <a href="#" class="profile-menu-link">
+                <img src="images/display.png" >
+                <p>Display & Accessibility</p>
+                <span>></span>
+            </a>
+            <a href="#" class="profile-menu-link">
+                <img src="images/logout.png" >
+                <p>Logout</p>
+                <span>></span>
+            </a>
+
+        </div>
+      </div>
+    </nav>
+    <!---Nav close-->
+
+    <div class="container">
+      <div class="profile-main">
+        <div class="profile-container">
+          <img src="images/cover-pic.jpg" class="cover">
+          <div class="profile-container-inner">
+            <img src="images/user-1.png" class="profile-pic">
+            <h1>Jake Anchor</h1>
+            <b>Web Designer / Developer at Microsoft</b>
+            <p>Oxlane Outpost, United Stated &middot; <a href="#">Contact info</a></p>
+            <div class="mutual-connection">
+              <img src="images/user-2.png">
+              <span>1 mutual colleague: Bernard Carson</span>
+            </div>
+            <div class="profile-btn">
+              <a href="#" class="primary-btn"><img src="images/connect.png">Connect</a>
+              <a href="#"><img src="images/chat.png">Message</a>
+            </div>
+          </div>
+        </div>
+
+        <div class="profile-description">
+          <h2>About</h2>
+          <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Est quam unde tenetur eius amet cupiditate vel voluptate, facilis iure, et sed eligendi voluptas? Exercitationem non nisi velit quia adipisci veritatis.</p>
+          <a href="#" class="see-more-link">See more...</a>
+        </div>
+
+        <div class="profile-description">
+          <h2>Experience</h2>
+          <div class="profile-desc-row">
+            <img src="images/microsoft.png">
+            <div>
+              <h3>Lead Front-End Developer</h3>
+              <b>Microsoft &middot; Full-time</b>
+              <b>Feb 2025 - Present &middot; 1.5 years</b>
+              <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Repellendus nemo consequuntur eveniet perspiciatis, illo quod asperiores cupiditate sint facilis velit accusamus? Soluta, mollitia. Odio fugiat possimus ab ullam repellendus repellat!</p>
+              <hr>
+            </div>
+          </div>
+
+          <div class="profile-desc-row">
+            <img src="images/slack.png">
+            <div>
+              <h3>Full Stack Developer</h3>
+              <b>Slack &middot; Full-time</b>
+              <b>Mar 2024 - Nov 2025 &middot; 2.7 years</b>
+              <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Repellendus nemo consequuntur eveniet perspiciatis, illo quod asperiores cupiditate sint facilis velit accusamus? Soluta, mollitia. Odio fugiat possimus ab ullam repellendus repellat!</p>
+              <hr>
+            </div>
+          </div>
+
+          <div class="profile-desc-row">
+            <img src="images/google.png">
+            <div>
+              <h3>Web Developer</h3>
+              <b>Google Inc &middot; Full-time</b>
+              <b>Sep 2023 - Oct 2024 &middot; 1.2 year</b>
+              <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Repellendus nemo consequuntur eveniet perspiciatis, illo quod asperiores cupiditate sint facilis velit accusamus? Soluta, mollitia. Odio fugiat possimus ab ullam repellendus repellat!</p>
+              
+            </div>
+          </div>
+          <hr class="show-more-hr">
+          <a href="#" class="experience-link">Show all 7 Experiences <img src="images/right-arrow.png"></a>
+        </div>
+
+      <div class="profile-description">
+        <h2>Education</h2>
+        <div class="profile-desc-row">
+          <img src="images/stanford.png">
+          <div>
+            <h3>Standord University</h3>
+            <b>BSc, Computer Science</b>
+            <b>2019 - 2023</b>
+            <hr class="show-more-hr">
+          </div>
+        </div>
+
+        <div class="profile-desc-row">
+          <img src="images/north.png">
+          <div>
+            <h3>Northwestern University</h3>
+            <b>BSEE, Electrical Engineering</b>
+            <b>2015 - 2019</b>
+            <hr class="show-more-hr">
+          </div>
+        </div>
+
+      <div class="profile-desc-row">
+        <img src="images/mit.png">
+        <div>
+          <h3>Harvard University</h3>
+          <b>BSEE, Electrical Engineering</b>
+          <b>2011 - 2015</b>
+        </div>
+      </div>
+    </div>
+
+    <div class="profile-description">
+      <h2>Skills</h2>
+      <a href=" " class="skills-btn">Leadership</a>
+      <a href=" " class="skills-btn">Web Design</a>
+      <a href=" " class="skills-btn">Leadership</a>
+      <a href=" " class="skills-btn">Development</a>
+      <a href=" " class="skills-btn">Communication</a>
+      <a href=" " class="skills-btn">UI/UX</a>
+      <a href=" " class="skills-btn">Planning</a>
+      <a href=" " class="skills-btn">javascript</a>
+      <a href=" " class="skills-btn">Python</a>
+      <a href=" " class="skills-btn">Entrepreneurship</a>
+    </div>
+    <div class="profile-description">
+      <h2>Language</h2>
+      <a href=" " class="language-btn">English</a>
+      <a href=" " class="language-btn">French</a>
+    </div>
+      
+      
+      
+      </div>
+      <div class="profile-sidebar">
+        <div class="sidebar-ad">
+          <small>Ad &middot; &middot; &middot;</small>
+          <p>Learn the fundamentals of Branding</p>
+          <div>
+            <img src="images/brand1.png" />
+            <img src="images/brand2.png" />
+          </div>
+          <b>Hot brands in demand</b>
+          <a href="#" class="ad-link">Learn More</a>
+        </div>
+
+        <div class="sidebar-people">
+          <h3>People you may know</h3>
+          <div class="sidebar-people-row">
+            <img src="images/user-3.png">
+            <div>
+              <h2>Mary Churchill</h2>
+              <p>Head of Marketing at Sony</p>
+              <a href="">Connect</a>
+            </div>
+          </div>
+          <div class="sidebar-people-row">
+            <img src="images/user-2.png">
+            <div>
+              <h2>Philip Churning</h2>
+              <p>Head of Marketing at Sony</p>
+              <a href="">Connect</a>
+            </div>
+          </div>
+          <div class="sidebar-people-row">
+            <img src="images/user-6.png">
+            <div>
+              <h2>Mark Bowie</h2>
+              <p>Head of Marketing at Sony</p>
+              <a href="">Connect</a>
+            </div>
+          </div>
+          <div class="sidebar-people-row">
+            <img src="images/user-4.png">
+            <div>
+              <h2>Christie Fable</h2>
+              <p>Head of Marketing at Sony</p>
+              <a href="">Connect</a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div class="profile-footer">
+      <div class="footer-content-wrapper">
+        <div class="sidebar-useful-links">
+          <a href="">About</a>
+          <a href="">Accessibility</a>
+          <a href="">Help Center</a>
+          <a href="">Privacy Policy</a>
+          <a href="">Get the App</a>
+          <a href="">More</a>
+        </div>
+    
+        <div class="copyright-msg">
+          <img src="images/logo2.png">
+          <p>Jobville &#169; 2025. All rights reserved</p>
+        </div>
+      </div>
+    </div>
+    
+
+    <script>
+        let profileMenu = document.getElementById("profileMenu");
+
+        function toggleMenu(){
+            profileMenu.classList.toggle("open-menu");
+        }
+    </script>
+  </body>
+</html>
